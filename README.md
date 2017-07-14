@@ -8,8 +8,8 @@ RandomKit currently provides pseudo randomness from the following sources:
 * OpenSSL via DeviceRandom
 * ARC4Random
 
-The implementation of these PRNGs have not yet been verified, please exercise caution when using them. In particular, do not the the Mersenne Twister algorithm for scripts requiring secure PRNG as it's small generator state is easily determined!
-More PRNGs will be added in the future, as well as methods to scramble Hashes and Array using output from the PRNGs.
+The implementation of these PRNGs have not yet been verified, please exercise caution when using them. In particular, do not the the Mersenne Twister algorithm for scripts requiring secure PRNG, as it's small generator state is easily determined!
+More PRNGs will be added in the future, as well as methods to scramble Hashes and Arrays using output from the PRNGs.
 
 ## Usage
 Just place ```require 'RandomKit'``` in the head of your Ruby file, then call as you would any class method.

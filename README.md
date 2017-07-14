@@ -2,12 +2,12 @@
 Simple Pseudo Random Number Generation in pure Ruby.
 
 # Features 
-RandomKit currently provides randomness from the following sources:
+RandomKit currently provides pseudo randomness from the following sources:
 
 * MT199937
 * OpenSSL via DeviceRandom
 * ARC4Random
-
+The implementation of these PRNGs have not yet been verified, please exercise caution when using them. In particular, do not the the Mersenne Twister algorithm for scripts requiring secure PRNG as it's small generator state is easily determined!
 More PRNGs will be added in the future, as well as methods to scramble Hashes and Array using output from the PRNGs.
 
 ## Usage
